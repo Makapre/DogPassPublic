@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "DBB46A56-670A-4762-84B0-7FF0BDA60498",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DogPass.xcodeproj",
+      "identifier" : "F71426F929B9CDA100215BC1",
+      "name" : "DogPass"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DogPass.xcodeproj",
+        "identifier" : "F7AC43B32A1E17BF009ADC46",
+        "name" : "DogPassTests"
+      }
+    }
+  ],
+  "version" : 1
+}

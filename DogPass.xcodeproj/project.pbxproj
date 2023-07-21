@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F71426FE29B9CDA100215BC1 /* DogPassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71426FD29B9CDA100215BC1 /* DogPassApp.swift */; };
+		F714270029B9CDA100215BC1 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71426FF29B9CDA100215BC1 /* Start.swift */; };
+		F714270229B9CDA200215BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F714270129B9CDA200215BC1 /* Assets.xcassets */; };
+		F728C22B2A236A73009CD762 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728C22A2A236A73009CD762 /* Launch Screen.storyboard */; };
+		F7302E622A30AC57000D6133 /* Address+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7302E612A30AC57000D6133 /* Address+Extension.swift */; };
+		F7360BB329C1F0C00027647F /* DetailDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7360BB229C1F0C00027647F /* DetailDog.swift */; };
+		F73DA15829BFCBBA00F649B2 /* Vaccination+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA14E29BFCBBA00F649B2 /* Vaccination+CoreDataClass.swift */; };
+		F73DA15929BFCBBA00F649B2 /* Vaccination+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA14F29BFCBBA00F649B2 /* Vaccination+CoreDataProperties.swift */; };
+		F73DA15A29BFCBBA00F649B2 /* Chip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15029BFCBBA00F649B2 /* Chip+CoreDataClass.swift */; };
+		F73DA15B29BFCBBA00F649B2 /* Chip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15129BFCBBA00F649B2 /* Chip+CoreDataProperties.swift */; };
+		F73DA15C29BFCBBA00F649B2 /* Height+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15229BFCBBA00F649B2 /* Height+CoreDataClass.swift */; };
+		F73DA15D29BFCBBA00F649B2 /* Height+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15329BFCBBA00F649B2 /* Height+CoreDataProperties.swift */; };
+		F73DA15E29BFCBBA00F649B2 /* Weight+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15429BFCBBA00F649B2 /* Weight+CoreDataClass.swift */; };
+		F73DA15F29BFCBBA00F649B2 /* Weight+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15529BFCBBA00F649B2 /* Weight+CoreDataProperties.swift */; };
+		F73DA16029BFCBBA00F649B2 /* Dog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15629BFCBBA00F649B2 /* Dog+CoreDataClass.swift */; };
+		F73DA16129BFCBBA00F649B2 /* Dog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DA15729BFCBBA00F649B2 /* Dog+CoreDataProperties.swift */; };
+		F73DDB182A2732C10064B579 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DDB172A2732C10064B579 /* DogViewModel.swift */; };
+		F73DDB1B2A273A660064B579 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DDB1A2A273A660064B579 /* ContactViewModel.swift */; };
+		F73DDB1F2A275E710064B579 /* RawAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DDB1E2A275E710064B579 /* RawAddress.swift */; };
+		F7586DD429BB30CA00021B3E /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7586DD329BB30CA00021B3E /* Onboarding.swift */; };
+		F7586DD629BB8E7600021B3E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7586DD529BB8E7600021B3E /* String+Extension.swift */; };
+		F7586DD829BB8E8A00021B3E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7586DD729BB8E8A00021B3E /* UIImage+Extension.swift */; };
+		F7586DDA29BB8F2200021B3E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7586DD929BB8F2200021B3E /* ImagePicker.swift */; };
+		F764272E29CB486100BB5F3B /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764272A29CB486100BB5F3B /* Contact+CoreDataClass.swift */; };
+		F764272F29CB486100BB5F3B /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764272B29CB486100BB5F3B /* Contact+CoreDataProperties.swift */; };
+		F764273029CB486100BB5F3B /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764272C29CB486100BB5F3B /* Address+CoreDataClass.swift */; };
+		F764273129CB486100BB5F3B /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764272D29CB486100BB5F3B /* Address+CoreDataProperties.swift */; };
+		F764273329CB4A4B00BB5F3B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764273229CB4A4B00BB5F3B /* Contacts.swift */; };
+		F764273529CB4CDE00BB5F3B /* DetailContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764273429CB4CDE00BB5F3B /* DetailContact.swift */; };
+		F764273729CB4DC700BB5F3B /* DetailAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F764273629CB4DC700BB5F3B /* DetailAddress.swift */; };
+		F77765042A3B64C200274259 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77765032A3B64C200274259 /* Binding+Extension.swift */; };
+		F77765062A3B70A200274259 /* RawContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77765052A3B70A200274259 /* RawContact.swift */; };
+		F7A6EA6E2A228D3F00646C8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7A6EA702A228D3F00646C8D /* Localizable.strings */; };
+		F7AA2FE229BA2F010034635C /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA2FE129BA2F010034635C /* Dashboard.swift */; };
+		F7AA2FE429BA300E0034635C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA2FE329BA300E0034635C /* Settings.swift */; };
+		F7AA2FE929BA74B70034635C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA2FE829BA74B70034635C /* Date+Extension.swift */; };
+		F7AA2FEC29BA75650034635C /* WeightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA2FEB29BA75650034635C /* WeightCard.swift */; };
+		F7AC43AF2A1E04D3009ADC46 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F7AC43AE2A1E04D2009ADC46 /* .swiftlint.yml */; };
+		F7AC43BE2A1E17E9009ADC46 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC43BD2A1E17E9009ADC46 /* Date+Extension.swift */; };
+		F7AC43C02A1E2CDD009ADC46 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC43BF2A1E2CDD009ADC46 /* Int+Extension.swift */; };
+		F7AC43C32A1E8BDB009ADC46 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC43C22A1E8BDB009ADC46 /* String+Extension.swift */; };
+		F7AC43C92A1E8F5A009ADC46 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AC43C82A1E8F5A009ADC46 /* UIImage+Extension.swift */; };
+		F7C095AC2A30EEDF00A75197 /* VaccinationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C095AB2A30EEDF00A75197 /* VaccinationCard.swift */; };
+		F7C095AE2A30EF3000A75197 /* Vaccinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C095AD2A30EF3000A75197 /* Vaccinations.swift */; };
+		F7C095B02A30F7F900A75197 /* DetailVaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C095AF2A30F7F900A75197 /* DetailVaccination.swift */; };
+		F7D1ABF82A2B2152005717AE /* NewContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1ABF72A2B2152005717AE /* NewContact.swift */; };
+		F7D1ABFA2A2B3472005717AE /* NewAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1ABF92A2B3472005717AE /* NewAddress.swift */; };
+		F7D1E51429C1CE40002FAEF8 /* NewDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1E51329C1CE40002FAEF8 /* NewDog.swift */; };
+		F7D1E51829C1DDB5002FAEF8 /* Heights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1E51729C1DDB5002FAEF8 /* Heights.swift */; };
+		F7D1E51A29C1DEF6002FAEF8 /* HeightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1E51929C1DEF6002FAEF8 /* HeightCard.swift */; };
+		F7F7696D29BCA222004A5FE7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F7696C29BCA222004A5FE7 /* Color+Extension.swift */; };
+		F7F7697129BCB1F0004A5FE7 /* Weights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F7697029BCB1F0004A5FE7 /* Weights.swift */; };
+		F7F7698F29BE38F4004A5FE7 /* Dogs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7F7698D29BE38F4004A5FE7 /* Dogs.xcdatamodeld */; };
+		F7F7699129BE3BFE004A5FE7 /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F7699029BE3BFE004A5FE7 /* Dogs.swift */; };
+		F7F769AA29BE4732004A5FE7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F769A929BE4732004A5FE7 /* DataController.swift */; };
+		F7FB090229C73CCC00371874 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FB090129C73CCC00371874 /* Int+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7AC43B82A1E17BF009ADC46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F71426F229B9CDA100215BC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F71426F929B9CDA100215BC1;
+			remoteInfo = DogPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F71426FA29B9CDA100215BC1 /* DogPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71426FD29B9CDA100215BC1 /* DogPassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPassApp.swift; sourceTree = "<group>"; };
+		F71426FF29B9CDA100215BC1 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		F714270129B9CDA200215BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F728C22A2A236A73009CD762 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F7302E612A30AC57000D6133 /* Address+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+Extension.swift"; sourceTree = "<group>"; };
+		F7360BB229C1F0C00027647F /* DetailDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDog.swift; sourceTree = "<group>"; };
+		F73DA14E29BFCBBA00F649B2 /* Vaccination+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccination+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73DA14F29BFCBBA00F649B2 /* Vaccination+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccination+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F73DA15029BFCBBA00F649B2 /* Chip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73DA15129BFCBBA00F649B2 /* Chip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F73DA15229BFCBBA00F649B2 /* Height+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Height+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73DA15329BFCBBA00F649B2 /* Height+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Height+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F73DA15429BFCBBA00F649B2 /* Weight+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weight+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73DA15529BFCBBA00F649B2 /* Weight+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weight+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F73DA15629BFCBBA00F649B2 /* Dog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F73DA15729BFCBBA00F649B2 /* Dog+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F73DDB172A2732C10064B579 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
+		F73DDB1A2A273A660064B579 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		F73DDB1E2A275E710064B579 /* RawAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawAddress.swift; sourceTree = "<group>"; };
+		F73DDB212A276B9F0064B579 /* roadmap.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = roadmap.md; sourceTree = "<group>"; };
+		F7586DD329BB30CA00021B3E /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		F7586DD529BB8E7600021B3E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F7586DD729BB8E8A00021B3E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F7586DD929BB8F2200021B3E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F764272A29CB486100BB5F3B /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F764272B29CB486100BB5F3B /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F764272C29CB486100BB5F3B /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F764272D29CB486100BB5F3B /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F764273229CB4A4B00BB5F3B /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		F764273429CB4CDE00BB5F3B /* DetailContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContact.swift; sourceTree = "<group>"; };
+		F764273629CB4DC700BB5F3B /* DetailAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAddress.swift; sourceTree = "<group>"; };
+		F77765032A3B64C200274259 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		F77765052A3B70A200274259 /* RawContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawContact.swift; sourceTree = "<group>"; };
+		F7A6EA6F2A228D3F00646C8D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7A6EA712A228D4A00646C8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7AA2FE129BA2F010034635C /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		F7AA2FE329BA300E0034635C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F7AA2FE829BA74B70034635C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F7AA2FEB29BA75650034635C /* WeightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCard.swift; sourceTree = "<group>"; };
+		F7AC43AE2A1E04D2009ADC46 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F7AC43B42A1E17BF009ADC46 /* DogPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7AC43BD2A1E17E9009ADC46 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F7AC43BF2A1E2CDD009ADC46 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		F7AC43C12A1E2E8D009ADC46 /* DogPass.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DogPass.xctestplan; sourceTree = "<group>"; };
+		F7AC43C22A1E8BDB009ADC46 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F7AC43C82A1E8F5A009ADC46 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F7C095AB2A30EEDF00A75197 /* VaccinationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCard.swift; sourceTree = "<group>"; };
+		F7C095AD2A30EF3000A75197 /* Vaccinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaccinations.swift; sourceTree = "<group>"; };
+		F7C095AF2A30F7F900A75197 /* DetailVaccination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVaccination.swift; sourceTree = "<group>"; };
+		F7D1ABF72A2B2152005717AE /* NewContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContact.swift; sourceTree = "<group>"; };
+		F7D1ABF92A2B3472005717AE /* NewAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddress.swift; sourceTree = "<group>"; };
+		F7D1E51329C1CE40002FAEF8 /* NewDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDog.swift; sourceTree = "<group>"; };
+		F7D1E51729C1DDB5002FAEF8 /* Heights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heights.swift; sourceTree = "<group>"; };
+		F7D1E51929C1DEF6002FAEF8 /* HeightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightCard.swift; sourceTree = "<group>"; };
+		F7F7696C29BCA222004A5FE7 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F7F7697029BCB1F0004A5FE7 /* Weights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weights.swift; sourceTree = "<group>"; };
+		F7F7698E29BE38F4004A5FE7 /* Dog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dog.xcdatamodel; sourceTree = "<group>"; };
+		F7F7699029BE3BFE004A5FE7 /* Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		F7F769A929BE4732004A5FE7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F7F87F9129C3BEC7000BC2B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F7FB090129C73CCC00371874 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F71426F729B9CDA100215BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AC43B12A1E17BF009ADC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F71426F129B9CDA100215BC1 = {
+			isa = PBXGroup;
+			children = (
+				F73DDB212A276B9F0064B579 /* roadmap.md */,
+				F7A6EA702A228D3F00646C8D /* Localizable.strings */,
+				F7AC43AE2A1E04D2009ADC46 /* .swiftlint.yml */,
+				F7F769A629BE40E9004A5FE7 /* CoreData */,
+				F71426FC29B9CDA100215BC1 /* DogPass */,
+				F7AC43B52A1E17BF009ADC46 /* DogPassTests */,
+				F71426FB29B9CDA100215BC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F71426FB29B9CDA100215BC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F71426FA29B9CDA100215BC1 /* DogPass.app */,
+				F7AC43B42A1E17BF009ADC46 /* DogPassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F71426FC29B9CDA100215BC1 /* DogPass */ = {
+			isa = PBXGroup;
+			children = (
+				F73DDB1D2A275E650064B579 /* Models */,
+				F73DDB162A2732B20064B579 /* ViewModels */,
+				F7AA2FEA29BA75530034635C /* Components */,
+				F7AA2FE729BA74940034635C /* Extensions */,
+				F7AA2FE029BA2EDF0034635C /* Views */,
+				F71426FD29B9CDA100215BC1 /* DogPassApp.swift */,
+				F71426FF29B9CDA100215BC1 /* Start.swift */,
+				F714270129B9CDA200215BC1 /* Assets.xcassets */,
+				F7F87F9129C3BEC7000BC2B4 /* README.md */,
+				F728C22A2A236A73009CD762 /* Launch Screen.storyboard */,
+			);
+			path = DogPass;
+			sourceTree = "<group>";
+		};
+		F73DDB162A2732B20064B579 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F73DDB172A2732C10064B579 /* DogViewModel.swift */,
+				F73DDB1A2A273A660064B579 /* ContactViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F73DDB1D2A275E650064B579 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F73DDB1E2A275E710064B579 /* RawAddress.swift */,
+				F77765052A3B70A200274259 /* RawContact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7A5B8B12A1F8DCD0067849B /* Test Plans */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC43C12A1E2E8D009ADC46 /* DogPass.xctestplan */,
+			);
+			path = "Test Plans";
+			sourceTree = "<group>";
+		};
+		F7AA2FE029BA2EDF0034635C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7AA2FE129BA2F010034635C /* Dashboard.swift */,
+				F7AA2FE329BA300E0034635C /* Settings.swift */,
+				F7586DD329BB30CA00021B3E /* Onboarding.swift */,
+				F7F7697029BCB1F0004A5FE7 /* Weights.swift */,
+				F7F7699029BE3BFE004A5FE7 /* Dogs.swift */,
+				F7D1E51729C1DDB5002FAEF8 /* Heights.swift */,
+				F7360BB229C1F0C00027647F /* DetailDog.swift */,
+				F764273229CB4A4B00BB5F3B /* Contacts.swift */,
+				F764273429CB4CDE00BB5F3B /* DetailContact.swift */,
+				F764273629CB4DC700BB5F3B /* DetailAddress.swift */,
+				F7C095AD2A30EF3000A75197 /* Vaccinations.swift */,
+				F7C095AF2A30F7F900A75197 /* DetailVaccination.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7AA2FE729BA74940034635C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7302E612A30AC57000D6133 /* Address+Extension.swift */,
+				F7AA2FE829BA74B70034635C /* Date+Extension.swift */,
+				F7586DD529BB8E7600021B3E /* String+Extension.swift */,
+				F7586DD729BB8E8A00021B3E /* UIImage+Extension.swift */,
+				F7F7696C29BCA222004A5FE7 /* Color+Extension.swift */,
+				F7FB090129C73CCC00371874 /* Int+Extension.swift */,
+				F77765032A3B64C200274259 /* Binding+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7AA2FEA29BA75530034635C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F7AA2FEB29BA75650034635C /* WeightCard.swift */,
+				F7586DD929BB8F2200021B3E /* ImagePicker.swift */,
+				F7D1E51329C1CE40002FAEF8 /* NewDog.swift */,
+				F7D1E51929C1DEF6002FAEF8 /* HeightCard.swift */,
+				F7D1ABF72A2B2152005717AE /* NewContact.swift */,
+				F7D1ABF92A2B3472005717AE /* NewAddress.swift */,
+				F7C095AB2A30EEDF00A75197 /* VaccinationCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F7AC43B52A1E17BF009ADC46 /* DogPassTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7A5B8B12A1F8DCD0067849B /* Test Plans */,
+				F7AC43BD2A1E17E9009ADC46 /* Date+Extension.swift */,
+				F7AC43BF2A1E2CDD009ADC46 /* Int+Extension.swift */,
+				F7AC43C22A1E8BDB009ADC46 /* String+Extension.swift */,
+				F7AC43C82A1E8F5A009ADC46 /* UIImage+Extension.swift */,
+			);
+			path = DogPassTests;
+			sourceTree = "<group>";
+		};
+		F7F769A629BE40E9004A5FE7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F764272A29CB486100BB5F3B /* Contact+CoreDataClass.swift */,
+				F764272B29CB486100BB5F3B /* Contact+CoreDataProperties.swift */,
+				F764272C29CB486100BB5F3B /* Address+CoreDataClass.swift */,
+				F764272D29CB486100BB5F3B /* Address+CoreDataProperties.swift */,
+				F73DA14E29BFCBBA00F649B2 /* Vaccination+CoreDataClass.swift */,
+				F73DA14F29BFCBBA00F649B2 /* Vaccination+CoreDataProperties.swift */,
+				F73DA15029BFCBBA00F649B2 /* Chip+CoreDataClass.swift */,
+				F73DA15129BFCBBA00F649B2 /* Chip+CoreDataProperties.swift */,
+				F73DA15229BFCBBA00F649B2 /* Height+CoreDataClass.swift */,
+				F73DA15329BFCBBA00F649B2 /* Height+CoreDataProperties.swift */,
+				F73DA15429BFCBBA00F649B2 /* Weight+CoreDataClass.swift */,
+				F73DA15529BFCBBA00F649B2 /* Weight+CoreDataProperties.swift */,
+				F73DA15629BFCBBA00F649B2 /* Dog+CoreDataClass.swift */,
+				F73DA15729BFCBBA00F649B2 /* Dog+CoreDataProperties.swift */,
+				F7F7698D29BE38F4004A5FE7 /* Dogs.xcdatamodeld */,
+				F7F769A929BE4732004A5FE7 /* DataController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F71426F929B9CDA100215BC1 /* DogPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F714270829B9CDA200215BC1 /* Build configuration list for PBXNativeTarget "DogPass" */;
+			buildPhases = (
+				F71426F629B9CDA100215BC1 /* Sources */,
+				F71426F729B9CDA100215BC1 /* Frameworks */,
+				F71426F829B9CDA100215BC1 /* Resources */,
+				F7AC43AD2A1DEDCE009ADC46 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogPass;
+			productName = DogPass;
+			productReference = F71426FA29B9CDA100215BC1 /* DogPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7AC43B32A1E17BF009ADC46 /* DogPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7AC43BA2A1E17BF009ADC46 /* Build configuration list for PBXNativeTarget "DogPassTests" */;
+			buildPhases = (
+				F7AC43B02A1E17BF009ADC46 /* Sources */,
+				F7AC43B12A1E17BF009ADC46 /* Frameworks */,
+				F7AC43B22A1E17BF009ADC46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7AC43B92A1E17BF009ADC46 /* PBXTargetDependency */,
+			);
+			name = DogPassTests;
+			productName = DogPassTests;
+			productReference = F7AC43B42A1E17BF009ADC46 /* DogPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F71426F229B9CDA100215BC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F71426F929B9CDA100215BC1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F7AC43B32A1E17BF009ADC46 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F71426F929B9CDA100215BC1;
+					};
+				};
+			};
+			buildConfigurationList = F71426F529B9CDA100215BC1 /* Build configuration list for PBXProject "DogPass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = F71426F129B9CDA100215BC1;
+			productRefGroup = F71426FB29B9CDA100215BC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F71426F929B9CDA100215BC1 /* DogPass */,
+				F7AC43B32A1E17BF009ADC46 /* DogPassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F71426F829B9CDA100215BC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AC43AF2A1E04D3009ADC46 /* .swiftlint.yml in Resources */,
+				F7A6EA6E2A228D3F00646C8D /* Localizable.strings in Resources */,
+				F728C22B2A236A73009CD762 /* Launch Screen.storyboard in Resources */,
+				F714270229B9CDA200215BC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AC43B22A1E17BF009ADC46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7AC43AD2A1DEDCE009ADC46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F71426F629B9CDA100215BC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F73DA16029BFCBBA00F649B2 /* Dog+CoreDataClass.swift in Sources */,
+				F7AA2FEC29BA75650034635C /* WeightCard.swift in Sources */,
+				F7586DD629BB8E7600021B3E /* String+Extension.swift in Sources */,
+				F73DA15C29BFCBBA00F649B2 /* Height+CoreDataClass.swift in Sources */,
+				F764272F29CB486100BB5F3B /* Contact+CoreDataProperties.swift in Sources */,
+				F7D1ABFA2A2B3472005717AE /* NewAddress.swift in Sources */,
+				F73DA15929BFCBBA00F649B2 /* Vaccination+CoreDataProperties.swift in Sources */,
+				F714270029B9CDA100215BC1 /* Start.swift in Sources */,
+				F7AA2FE229BA2F010034635C /* Dashboard.swift in Sources */,
+				F7AA2FE429BA300E0034635C /* Settings.swift in Sources */,
+				F73DA15E29BFCBBA00F649B2 /* Weight+CoreDataClass.swift in Sources */,
+				F7D1E51429C1CE40002FAEF8 /* NewDog.swift in Sources */,
+				F73DDB1F2A275E710064B579 /* RawAddress.swift in Sources */,
+				F7D1ABF82A2B2152005717AE /* NewContact.swift in Sources */,
+				F77765042A3B64C200274259 /* Binding+Extension.swift in Sources */,
+				F7AA2FE929BA74B70034635C /* Date+Extension.swift in Sources */,
+				F764273129CB486100BB5F3B /* Address+CoreDataProperties.swift in Sources */,
+				F7F7697129BCB1F0004A5FE7 /* Weights.swift in Sources */,
+				F764272E29CB486100BB5F3B /* Contact+CoreDataClass.swift in Sources */,
+				F764273729CB4DC700BB5F3B /* DetailAddress.swift in Sources */,
+				F73DA16129BFCBBA00F649B2 /* Dog+CoreDataProperties.swift in Sources */,
+				F7F769AA29BE4732004A5FE7 /* DataController.swift in Sources */,
+				F7C095AC2A30EEDF00A75197 /* VaccinationCard.swift in Sources */,
+				F764273029CB486100BB5F3B /* Address+CoreDataClass.swift in Sources */,
+				F7D1E51A29C1DEF6002FAEF8 /* HeightCard.swift in Sources */,
+				F7FB090229C73CCC00371874 /* Int+Extension.swift in Sources */,
+				F7F7696D29BCA222004A5FE7 /* Color+Extension.swift in Sources */,
+				F7C095AE2A30EF3000A75197 /* Vaccinations.swift in Sources */,
+				F7586DDA29BB8F2200021B3E /* ImagePicker.swift in Sources */,
+				F7C095B02A30F7F900A75197 /* DetailVaccination.swift in Sources */,
+				F7D1E51829C1DDB5002FAEF8 /* Heights.swift in Sources */,
+				F73DDB182A2732C10064B579 /* DogViewModel.swift in Sources */,
+				F73DDB1B2A273A660064B579 /* ContactViewModel.swift in Sources */,
+				F77765062A3B70A200274259 /* RawContact.swift in Sources */,
+				F7360BB329C1F0C00027647F /* DetailDog.swift in Sources */,
+				F73DA15A29BFCBBA00F649B2 /* Chip+CoreDataClass.swift in Sources */,
+				F7586DD829BB8E8A00021B3E /* UIImage+Extension.swift in Sources */,
+				F7586DD429BB30CA00021B3E /* Onboarding.swift in Sources */,
+				F73DA15D29BFCBBA00F649B2 /* Height+CoreDataProperties.swift in Sources */,
+				F73DA15B29BFCBBA00F649B2 /* Chip+CoreDataProperties.swift in Sources */,
+				F7F7698F29BE38F4004A5FE7 /* Dogs.xcdatamodeld in Sources */,
+				F73DA15829BFCBBA00F649B2 /* Vaccination+CoreDataClass.swift in Sources */,
+				F73DA15F29BFCBBA00F649B2 /* Weight+CoreDataProperties.swift in Sources */,
+				F7F7699129BE3BFE004A5FE7 /* Dogs.swift in Sources */,
+				F764273529CB4CDE00BB5F3B /* DetailContact.swift in Sources */,
+				F7302E622A30AC57000D6133 /* Address+Extension.swift in Sources */,
+				F71426FE29B9CDA100215BC1 /* DogPassApp.swift in Sources */,
+				F764273329CB4A4B00BB5F3B /* Contacts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AC43B02A1E17BF009ADC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AC43BE2A1E17E9009ADC46 /* Date+Extension.swift in Sources */,
+				F7AC43C32A1E8BDB009ADC46 /* String+Extension.swift in Sources */,
+				F7AC43C02A1E2CDD009ADC46 /* Int+Extension.swift in Sources */,
+				F7AC43C92A1E8F5A009ADC46 /* UIImage+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7AC43B92A1E17BF009ADC46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F71426F929B9CDA100215BC1 /* DogPass */;
+			targetProxy = F7AC43B82A1E17BF009ADC46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7A6EA702A228D3F00646C8D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7A6EA6F2A228D3F00646C8D /* de */,
+				F7A6EA712A228D4A00646C8D /* en */,
+			);
+			name = Localizable.strings;
+			path = DogPass;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F714270629B9CDA200215BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F714270729B9CDA200215BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F714270929B9CDA200215BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 9P3SFAC639;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DogPass;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to take a picture.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makapre.DogPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F714270A29B9CDA200215BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 9P3SFAC639;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DogPass;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to take a picture.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makapre.DogPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F7AC43BB2A1E17BF009ADC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P3SFAC639;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makapre.DogPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogPass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DogPass";
+			};
+			name = Debug;
+		};
+		F7AC43BC2A1E17BF009ADC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P3SFAC639;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makapre.DogPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogPass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DogPass";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F71426F529B9CDA100215BC1 /* Build configuration list for PBXProject "DogPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F714270629B9CDA200215BC1 /* Debug */,
+				F714270729B9CDA200215BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F714270829B9CDA200215BC1 /* Build configuration list for PBXNativeTarget "DogPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F714270929B9CDA200215BC1 /* Debug */,
+				F714270A29B9CDA200215BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7AC43BA2A1E17BF009ADC46 /* Build configuration list for PBXNativeTarget "DogPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7AC43BB2A1E17BF009ADC46 /* Debug */,
+				F7AC43BC2A1E17BF009ADC46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7F7698D29BE38F4004A5FE7 /* Dogs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7F7698E29BE38F4004A5FE7 /* Dog.xcdatamodel */,
+			);
+			currentVersion = F7F7698E29BE38F4004A5FE7 /* Dog.xcdatamodel */;
+			path = Dogs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F71426F229B9CDA100215BC1 /* Project object */;
+}
